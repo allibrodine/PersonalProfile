@@ -10,6 +10,15 @@ header {
     background-position: top;   
 }
 
+body {
+    background: lightslategray;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
 
 header h1 {
     font-size: 100px;
@@ -17,7 +26,7 @@ header h1 {
     font-family: fantasy;
     padding-top: 50px;
     padding-left: 20px;
-    text-shadow: 0 0 black; 
+    text-shadow: 1px 1px black; 
 }
 
 header nav {
@@ -25,12 +34,67 @@ header nav {
     margin-top: 50px;
 }
 
-header a {
+header nav a:hover {
+    color: gray; 
+}
+
+header a, footer div a {
     text-decoration: none;
     padding: 20px;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-weight: bold;
-    text-shadow: 0 0 black;
+    text-shadow: 1px 1px black;
+}
+
+.about-me {
+    padding: 30px;
+    text-align: center;
+}
+
+.about-me p {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.my-work {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.run-buddy {
+    padding-bottom: 5px;
+}
+
+.horiseon, .fanpage {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.about-me h2, .my-work h2 {
+    width: 100%;
+    text-align: center; 
+    font-family: fantasy;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+footer h2 {
+    font-family: fantasy;
+    text-align: left;
+    margin-left: 10px;
+}
+
+footer div a {
+    color: black;
+    text-shadow: 1px 1px white; 
+}
+
+footer div a:hover {
+    color: lightgray; 
 }
