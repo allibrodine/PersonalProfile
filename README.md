@@ -15,6 +15,6 @@ This page was created to showcase my work as a budding web developer. Although t
 https://allibrodine.github.io/PersonalProfile
 
 
-##Author
+## Author
 Alli Brodine
 allibrodine81@gmail.com
