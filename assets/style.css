@@ -11,7 +11,7 @@ header {
 }
 
 body {
-    background: lightslategray;
+    background: linear-gradient(lightslategray, aliceblue, lightslategray);
 }
 
 .wrapper {
@@ -34,8 +34,8 @@ header nav {
     margin-top: 50px;
 }
 
-header nav a:hover {
-    color: gray; 
+header nav a:hover, footer div a:hover {
+    color: skyblue; 
 }
 
 header a, footer div a {
@@ -54,7 +54,7 @@ header a, footer div a {
 }
 
 .about-me p {
-    color: white;
+    color: slategray;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -81,7 +81,7 @@ header a, footer div a {
 }
 
 footer {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 footer h2 {
@@ -93,8 +93,4 @@ footer h2 {
 footer div a {
     color: black;
     text-shadow: 1px 1px white; 
-}
-
-footer div a:hover {
-    color: lightgray; 
 }
