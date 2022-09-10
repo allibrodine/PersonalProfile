@@ -1,51 +1,83 @@
+:root {
+    --primary-color: #ECBC55;
+    --secondary-color: #044343;
+    --tertiary-color: #045757;
+    --quaternary-color: #222222;
+}
+
 * {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
-header {
+body {
+    background-image: url(../assets/images/Moon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+/* body {
+    background-image: radial-gradient(var(--quaternary-color), var(--secondary-color));
+} */
+
+/* header {
     background-image: url("../assets/images/OntheBeach.jpeg");
     background-size: cover;
     height: 300px;
     background-position: top;   
+} */
+
+header h1 {
+    font-size: 120px;
+    color: var(--tertiary-color);
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 30px;
+    padding-left: 20px;
+    text-shadow: 0 0 8px var(--primary-color); 
 }
 
-body {
-    background: linear-gradient(lightslategray, aliceblue, lightslategray);
+/* nav {
+    display: block;
+    float: right;
+    margin-top: 50px;
+} */
+header {
+    width: 100%;
+    display: flex;
+}
+
+header div a {
+    display: inline-block;
+    text-align: end;
+}
+
+header div a:hover, footer div a:hover {
+    color:var(--secondary-color); 
+    text-decoration: none;
+}
+
+header a, footer div a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 35px;
+    font-family: 'Neucha', cursive;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-shadow: 1px 1px var(--quaternary-color);
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center; 
-}
-
-header h1 {
-    font-size: 100px;
-    color: gray;
-    font-family: fantasy;
-    padding-top: 50px;
-    padding-left: 20px;
-    text-shadow: 1px 1px black; 
-}
-
-header nav {
-    float: right;
     margin-top: 50px;
-}
+} 
 
-header nav a:hover, footer div a:hover {
-    color: skyblue; 
-}
-
-header a, footer div a {
-    text-decoration: none;
-    padding: 20px;
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+h2 {
+    color: var(--tertiary-color);
     font-weight: bold;
-    text-shadow: 1px 1px black;
+    text-shadow: 0 0 2px var(--primary-color);
 }
 
 .about-me {
@@ -54,23 +86,39 @@ header a, footer div a {
 }
 
 .about-me p {
-    color: slategray;
+    color: #E4E4E4;
     font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 4px var(--quaternary-color);
 }
 
-/*.card {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 10px 10px;
-}*/
+.card {
+    margin: 20px;
+    background-color: var(--quaternary-color);
+    border: solid 3px var(--secondary-color);
+    padding: 10px;
+} 
 
-.my-work {
+.card h3 {
+    padding: 5px;
+    font-family: 'Neucha', cursive;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+img {
+    filter: grayscale(80%);
+}
+
+img:hover {
+    filter: grayscale(15%);
+}
+
+/* .my-work {
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
     justify-content: center; 
-}
+} */
 
 /*.run-buddy {
     padding-bottom: 5px;
@@ -96,8 +144,8 @@ footer h2 {
     text-align: left;
     margin-left: 10px;
 }
-
+/* 
 footer div a {
     color: black;
     text-shadow: 1px 1px white; 
-}
+} */
